@@ -1,6 +1,10 @@
 const label = $("#label");
 const shoppingCart = $("#shopping-cart");
 
+setTimeout(() => {
+  basket.reverse();
+}, 0);
+
 function generateCart() {
   if (basket.length > 0) {
     const data = basket.map((item) => {
